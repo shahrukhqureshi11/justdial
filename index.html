@@ -11,8 +11,11 @@
         .s_tbder{
             border:1px dashed black;
         }
-        body{
-            background-color:#ffff ;
+        body{        
+                background-color: #E8E8E8;
+                font-family: "Poppins", sans-serif;
+                font-weight: 200;
+                font-style: normal;
         }
         header{
             height:79px;
@@ -22,6 +25,12 @@
         }
         footer{
             height:559px;
+        }
+        .s_dropdown{
+             margin-top: 10px;
+            }
+        .s_bell{
+            margin-bottom: 0px;
         }
     </style>
     <style>
@@ -71,28 +80,27 @@
                                    <li><a class="dropdown-item" href="#">Chhattisgarhi</a></li>
                                </ul>                            
                             </div>
-                        </li>            
-                         <!-- <li class="nav-item">  -->
-                          <!-- <a class="nav-link" href="#" style="color: rgb(22, 1, 1);"></a></bd> -->
-                           <!-- <a href=""></a> <i style="margin-left:1px;"></i>Investor Relations</a> -->
-                        <!-- </li> -->
+                        </li>              
                         <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true" style="color: black;">Investor Relations</a>
-                        </li>
-                        <!-- <li class="nav-item"> -->
-                            <!-- <a class="nav-link disabled" aria-disabled="true" style="color: black;"> -->
-                            <!-- <a><i style="margin-left:1px;"></i> Advertise</a> -->
-                            <!-- <i class="fa-solid fa-bullhorn" style="margin-left: 8px;"></i> -->
-                        <!-- </li> -->
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true" style="color: black;">
-                               <a><i style="margin-left: 2px;"></i>Free Listing</a> 
-                               <i class="fa-solid fa-bell"></i>
-                            </a>
-                           </li>
-                            <li class="nav-item">
                             <a class="nav-link disabled" href="#" style="color: black;"></a>
                         </li> 
+                         <li class="nav-item">
+                                <button type="button" class="btn"><a class="nav-link text-black" href="#">Investor Relations</a></button>
+                            </li>
+                            <li class="nav-item">
+                                <button type="button" class="btn"><a class="nav-link text-black" href="#">Free Listing</a></button>
+                            </li>
+                            <li class="nav-item a_bell">
+                                <button type="button" class="btn btn-lg"><a class="nav-link text-black" href="#">
+                                    <i class="fa-regular fa-bell"></i>
+                                </a></button>
+                            </li>
+                        <li class="nav-item a_dropdown">
+                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Log-In / Sign-Up
+                                <i class="fa-regular fa-circle-user"></i>
+                            </button>
+                               <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        </li>
                    </ul> 
                 </div>
         </header>
@@ -100,10 +108,9 @@
                 <h2>search across '5.9 Crore + 
                     <span id="rotatingText" style="color: #0076D7;">4.7 Crore + business</span>
                 </h2>
-            <div class="d-flex gap-3 align-items-center flex-wrap">
-  
-            
-                    <div class="input-group location-box">
+            <div class="d-flex gap-5 align-items-left flex-wrap">   
+            <div class="d-flex gap-5 align-video-left flex-wrap">       
+                    <div class="input-group location-box left">
                         <span class="input-group-text">
                         <svg class="svg-inline--fa fa-location-dot text-primary" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-dot" ></svg>
                         <input type="text" class="form-control" placeholder="Select Location">
@@ -118,16 +125,19 @@
             </div>
         
             <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1000">
-                   <div class="carousel-inner">
+                   <div class="carousel-inner s_tbder">
                         <div class="carousel-item carousel-item-next carousel-item-start">
-                            <img src="./img/slide1.jpeg" class="d-block w-100" alt="Slide 1">&gt;
+                            <img src="img/effotel-hotel-by-sayaji.jpg" class="d-block p-0" alt="Slide 1">&gt;
                         </div>
-                        <div class="carousel-item">
-                            <img src="./img/slide2.jpeg" class="d-block w-100" alt="Slide 2">
+                        <div class="carousel-item"> 
+                            <img src="img/effotel-hotel (4).jpg" class="d-block p-0" alt="Slide 2">
                         </div>
 
                         <div class="carousel-item active carousel-item-start">
-                            <img src="./img/slide3.jpeg" class="d-block w-100" alt="Slide 3">
+                            <img src="img/20180922-162342-largejpg.jpg" class="d-block p-0" alt="Slide 3">
+                        </div>
+                        <div class="carousel-video active carousel-video-start">
+                            <video src="" class="d-block p-0" alt="Slide 4">
                         </div>
                         </div>
                       
